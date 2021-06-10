@@ -52,7 +52,7 @@ var languageData = {
     },
     skills:{
       header:"HABILIDADES",
-      paragraph: "Desarrollador frontend proactivo, con hambre de aprendizaje y capacidad de trabajar en equipo." 
+      paragraph: "Desarrollador frontend proactivo, con sed de aprendizaje y capacidad de trabajar en equipo." 
     },
     portfolio:{
       header: "PORTAFOLIO",
