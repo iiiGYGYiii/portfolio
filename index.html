@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Omar Cocoletzi | Frontend Developer</title>
+  <meta name="description" content="Hola, soy Omar Cocoletzi, Frontend Developer. Bienvenido a mi sito personal.">
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <script src="https://kit.fontawesome.com/23192939c8.js" crossorigin="anonymous"></script>
+  <meta name="theme-color" content="#0099ff">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+  <header style="border-bottom:1px black solid;">
+    <nav class="navbar">
+      <ul id="navbar-list">
+        <li class="nav-item">
+          <a href="#home">INICIO</a>
+        </li>
+        <div class="menu-btn">
+          <div class="menu-btn-burger"></div>
+        </div>
+        <div class="menu-wrapper">
+          <li class="nav-item">
+            <a href="#aboutme">SOBRE MÍ</a>
+          </li>
+          <li class="nav-item">
+            <a href="#skills">HABILIDADES</a>
+          </li>
+          <li class="nav-item">
+            <a href="#portfolio">PORTAFOLIO</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contactme">¡CONTÁCTAME!</a>
+          </li>
+          <li class="nav-item dropdown-container">
+            <span id="language-selected">ES | 🇲🇽</span>
+            <ul id="language-selector">
+              <li class="language" id="spanish">
+                ES | 🇲🇽
+              </li>
+              <li class="language" id="english">
+                EN | 🇺🇸 
+              </li>
+            </ul>
+          </li>
+        </div>
+      </ul>
+    </nav>
+  </header>
+  <main> 
+    <section id="home">
+      <h1 id="home-header">
+        <span id="home-header-lang">¡Hola! Soy Omar Cocoletzi, un <span class="sec-color">Junior Front End developer</span> y me gusta</span> <span id="likes"></span>
+      </h1>
+      <div id="home-picture">
+        <img id="profile-picture" src="https://i.imgur.com/lOxY2jE.png" title="avatar" alt="profile" />
+        <ul class="icons-container">
+          <li><a href="https://github.com/iiiGYGYiii" target="_blank" >Git Hub <i class="fab fa-github-square"></i></li></a>
+          <li><a href="https://www.linkedin.com/in/omar-cocoletzi-cabrera-773762214/" target="_blank" >LinkedIn <i class="fab fa-linkedin"></i></li></a>
+        </ul>
+      </div>
+    </section>
+    <section id="aboutme">
+      <h2 id="aboutme-header">SOBRE MÍ</h2>
+      <hr class="dotted"/>
+      <p id="aboutme-paragraph">Soy un aficionado de la tecnología. Me gustan los videojuegos 🎮, hacer mi propio pan 🍞 y andar en bicicleta. 🚴‍♀️</p>
+    </section>
+    <section id="skills">
+      <img id="computer"  src="https://i.imgur.com/16z4Ay4.png" title="coding" alt="computer" />
+      <div id="skills-container">
+        <h2 id="skills-header">HABILIDADES</h2>
+        <hr class="dotted" style="width:50%"/>
+        <p id="skills-paragraph">Desarrollador frontend proactivo, con hambre de aprendizaje y capacidad de trabajar en equipo.</p>
+        <hr style="width:50%;"/>
+        <h3>FRONT-END</h3>
+        <p>HTML-CSS-JavasCript-React</p>
+        <div class="front-icons">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="html" height="30">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="css" height="30">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg" alt="javascript" height="30">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="react" height="30">
+        </div>
+        <h3>API</h3>
+        <p>REST</p>
+        <div class="api-icons">
+          <svg xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 0 64 64"><path d="M 29.5625 2 C 28.179688 2 26.984375 2.933594 26.652344 4.273438 L 25.765625 7.789063 C 23.492188 8.375 21.3125 9.277344 19.292969 10.480469 L 16.175781 8.609375 C 14.992188 7.902344 13.488281 8.089844 12.511719 9.0625 L 9.0625 12.511719 C 8.085938 13.484375 7.902344 14.992188 8.609375 16.175781 L 10.472656 19.285156 C 9.277344 21.308594 8.375 23.488281 7.796875 25.769531 L 4.273438 26.652344 C 2.933594 26.984375 2 28.183594 2 29.5625 L 2 34.4375 C 2 35.820313 2.933594 37.015625 4.273438 37.347656 L 7.789063 38.234375 C 8.375 40.511719 9.277344 42.691406 10.480469 44.707031 L 8.609375 47.824219 C 7.902344 49.007813 8.085938 50.515625 9.0625 51.488281 L 12.511719 54.9375 C 13.488281 55.914063 14.992188 56.097656 16.175781 55.390625 L 19.289063 53.527344 C 21.3125 54.722656 23.492188 55.628906 25.769531 56.203125 L 26.652344 59.730469 C 26.984375 61.066406 28.183594 62 29.5625 62 L 34.4375 62 C 35.820313 62 37.015625 61.066406 37.347656 59.730469 L 38.234375 56.207031 C 40.507813 55.625 42.6875 54.722656 44.707031 53.519531 L 47.824219 55.390625 C 49.007813 56.097656 50.511719 55.910156 51.488281 54.9375 L 54.9375 51.488281 C 55.914063 50.515625 56.097656 49.007813 55.390625 47.824219 L 53.527344 44.714844 C 54.722656 42.691406 55.625 40.511719 56.203125 38.230469 L 59.730469 37.347656 C 61.066406 37.015625 62 35.816406 62 34.4375 L 62 29.5625 C 62 28.183594 61.066406 26.984375 59.730469 26.652344 L 56.207031 25.765625 C 55.625 23.488281 54.722656 21.308594 53.519531 19.292969 L 55.390625 16.175781 C 56.097656 14.992188 55.914063 13.484375 54.9375 12.511719 L 51.488281 9.0625 C 50.511719 8.085938 49.007813 7.902344 47.824219 8.609375 L 44.710938 10.472656 C 42.6875 9.277344 40.507813 8.371094 38.230469 7.796875 L 37.347656 4.273438 C 37.011719 2.933594 35.816406 2 34.4375 2 Z M 29.5625 4 L 34.4375 4 C 34.898438 4 35.296875 4.3125 35.40625 4.757813 L 36.289063 8.28125 C 36.464844 8.992188 37.019531 9.546875 37.734375 9.726563 C 39.828125 10.265625 41.832031 11.09375 43.691406 12.195313 C 44.328125 12.570313 45.109375 12.574219 45.738281 12.195313 L 48.855469 10.328125 C 49.25 10.089844 49.75 10.152344 50.074219 10.476563 L 53.523438 13.921875 C 53.847656 14.25 53.910156 14.753906 53.671875 15.144531 L 51.804688 18.261719 C 51.429688 18.886719 51.429688 19.671875 51.804688 20.308594 C 52.90625 22.164063 53.734375 24.167969 54.269531 26.261719 C 54.453125 26.976563 55.007813 27.53125 55.71875 27.707031 L 59.242188 28.589844 C 59.6875 28.703125 60 29.101563 60 29.5625 L 60 34.4375 C 60 34.898438 59.6875 35.296875 59.242188 35.40625 L 55.714844 36.289063 C 55.007813 36.46875 54.453125 37.023438 54.269531 37.734375 C 53.734375 39.832031 52.902344 41.835938 51.804688 43.691406 C 51.425781 44.328125 51.425781 45.109375 51.804688 45.734375 L 53.671875 48.855469 C 53.910156 49.246094 53.847656 49.75 53.523438 50.074219 L 50.074219 53.523438 C 49.75 53.847656 49.246094 53.910156 48.855469 53.671875 L 45.738281 51.804688 C 45.113281 51.425781 44.328125 51.425781 43.691406 51.804688 C 41.832031 52.90625 39.828125 53.734375 37.738281 54.269531 C 37.023438 54.453125 36.46875 55.007813 36.289063 55.71875 L 35.40625 59.238281 C 35.296875 59.6875 34.898438 60 34.4375 60 L 29.5625 60 C 29.101563 60 28.703125 59.6875 28.59375 59.242188 L 27.710938 55.71875 C 27.53125 55.007813 26.976563 54.453125 26.265625 54.269531 C 24.171875 53.734375 22.167969 52.90625 20.308594 51.804688 C 19.988281 51.617188 19.636719 51.523438 19.28125 51.523438 C 18.925781 51.523438 18.574219 51.617188 18.261719 51.804688 L 15.144531 53.671875 C 14.753906 53.910156 14.25 53.847656 13.921875 53.523438 L 10.476563 50.078125 C 10.152344 49.75 10.089844 49.246094 10.324219 48.855469 L 12.191406 45.738281 C 12.570313 45.109375 12.570313 44.328125 12.191406 43.691406 C 11.09375 41.835938 10.261719 39.832031 9.726563 37.738281 C 9.542969 37.023438 8.992188 36.46875 8.28125 36.292969 L 4.757813 35.410156 C 4.3125 35.296875 4 34.898438 4 34.4375 L 4 29.5625 C 4 29.101563 4.3125 28.703125 4.757813 28.589844 L 8.285156 27.707031 C 8.992188 27.53125 9.546875 26.976563 9.726563 26.265625 C 10.265625 24.167969 11.097656 22.164063 12.195313 20.308594 C 12.570313 19.671875 12.570313 18.886719 12.195313 18.261719 L 10.328125 15.144531 C 10.089844 14.753906 10.152344 14.25 10.476563 13.921875 L 13.925781 10.476563 C 14.25 10.152344 14.753906 10.089844 15.144531 10.328125 L 18.261719 12.195313 C 18.886719 12.570313 19.671875 12.574219 20.308594 12.195313 C 22.167969 11.09375 24.171875 10.265625 26.261719 9.726563 C 26.976563 9.546875 27.53125 8.992188 27.707031 8.28125 L 28.589844 4.757813 C 28.703125 4.3125 29.101563 4 29.5625 4 Z M 32 11 C 31.449219 11 31 11.445313 31 12 L 31 14 C 31 14.554688 31.449219 15 32 15 C 32.550781 15 33 14.554688 33 14 L 33 12 C 33 11.445313 32.550781 11 32 11 Z M 26.960938 11.6875 C 26.832031 11.671875 26.699219 11.679688 26.5625 11.71875 C 26.03125 11.859375 25.714844 12.40625 25.859375 12.941406 L 26.375 14.875 C 26.496094 15.320313 26.898438 15.613281 27.34375 15.613281 C 27.425781 15.613281 27.511719 15.601563 27.597656 15.578125 C 28.132813 15.4375 28.449219 14.890625 28.308594 14.355469 L 27.789063 12.421875 C 27.683594 12.023438 27.347656 11.742188 26.960938 11.6875 Z M 37.039063 11.6875 C 36.652344 11.742188 36.316406 12.019531 36.210938 12.421875 L 35.691406 14.355469 C 35.550781 14.886719 35.867188 15.4375 36.402344 15.578125 C 36.488281 15.601563 36.574219 15.613281 36.65625 15.613281 C 37.097656 15.613281 37.503906 15.316406 37.625 14.871094 L 38.140625 12.9375 C 38.285156 12.40625 37.96875 11.859375 37.4375 11.714844 C 37.300781 11.679688 37.167969 11.671875 37.039063 11.6875 Z M 21.875 13.6875 C 21.746094 13.703125 21.621094 13.746094 21.5 13.8125 C 21.019531 14.089844 20.859375 14.703125 21.136719 15.179688 L 22.136719 16.910156 C 22.320313 17.230469 22.65625 17.410156 23 17.410156 C 23.171875 17.410156 23.34375 17.367188 23.5 17.277344 C 23.980469 17 24.140625 16.386719 23.863281 15.910156 L 22.863281 14.179688 C 22.660156 13.820313 22.261719 13.640625 21.875 13.6875 Z M 42.125 13.6875 C 41.734375 13.640625 41.339844 13.820313 41.136719 14.179688 L 40.136719 15.910156 C 39.859375 16.390625 40.019531 17 40.5 17.277344 C 40.65625 17.367188 40.828125 17.410156 41 17.410156 C 41.34375 17.410156 41.679688 17.230469 41.863281 16.910156 L 42.863281 15.179688 C 43.140625 14.699219 42.980469 14.089844 42.5 13.8125 C 42.378906 13.746094 42.253906 13.703125 42.125 13.6875 Z M 21.390625 21.96875 C 20.949219 21.96875 20.558594 22.261719 20.433594 22.683594 L 15.03125 40.683594 C 14.871094 41.210938 15.171875 41.769531 15.703125 41.925781 C 16.230469 42.082031 16.789063 41.785156 16.949219 41.257813 L 18.53125 35.96875 L 24.246094 35.96875 L 25.828125 41.257813 C 25.960938 41.691406 26.355469 41.96875 26.785156 41.96875 C 26.882813 41.96875 26.980469 41.957031 27.078125 41.925781 C 27.605469 41.769531 27.90625 41.210938 27.746094 40.683594 L 22.347656 22.683594 C 22.21875 22.261719 21.828125 21.96875 21.390625 21.96875 Z M 31 22 C 30.449219 22 30 22.445313 30 23 L 30 41 C 30 41.554688 30.449219 42 31 42 C 31.550781 42 32 41.554688 32 41 L 32 34 L 36 34 C 38.207031 34 40 32.207031 40 30 L 40 26 C 40 23.792969 38.207031 22 36 22 Z M 43 22 C 42.449219 22 42 22.445313 42 23 C 42 23.554688 42.449219 24 43 24 L 44 24 L 44 40 L 43 40 C 42.449219 40 42 40.445313 42 41 C 42 41.554688 42.449219 42 43 42 L 47 42 C 47.550781 42 48 41.554688 48 41 C 48 40.445313 47.550781 40 47 40 L 46 40 L 46 24 L 47 24 C 47.550781 24 48 23.554688 48 23 C 48 22.445313 47.550781 22 47 22 Z M 32 24 L 36 24 C 37.101563 24 38 24.898438 38 26 L 38 30 C 38 31.101563 37.101563 32 36 32 L 32 32 Z M 21.390625 26.449219 L 23.644531 33.96875 L 19.132813 33.96875 Z M 23.125 46.59375 C 22.734375 46.546875 22.339844 46.730469 22.136719 47.089844 L 21.136719 48.820313 C 20.859375 49.300781 21.019531 49.910156 21.5 50.1875 C 21.65625 50.277344 21.828125 50.320313 22 50.320313 C 22.34375 50.320313 22.679688 50.140625 22.863281 49.820313 L 23.863281 48.089844 C 24.140625 47.609375 23.980469 47 23.5 46.722656 C 23.378906 46.652344 23.25 46.613281 23.125 46.59375 Z M 40.875 46.59375 C 40.75 46.613281 40.621094 46.652344 40.5 46.722656 C 40.019531 47 39.859375 47.613281 40.136719 48.089844 L 41.136719 49.820313 C 41.320313 50.140625 41.65625 50.320313 42 50.320313 C 42.171875 50.320313 42.34375 50.277344 42.5 50.1875 C 42.980469 49.910156 43.140625 49.296875 42.863281 48.820313 L 41.863281 47.089844 C 41.660156 46.730469 41.265625 46.546875 40.875 46.59375 Z M 36.796875 48.394531 C 36.667969 48.375 36.535156 48.386719 36.402344 48.421875 C 35.867188 48.566406 35.550781 49.113281 35.691406 49.644531 L 36.210938 51.578125 C 36.332031 52.023438 36.734375 52.316406 37.175781 52.316406 C 37.261719 52.316406 37.347656 52.308594 37.4375 52.285156 C 37.96875 52.140625 38.285156 51.59375 38.140625 51.0625 L 37.625 49.128906 C 37.519531 48.726563 37.183594 48.449219 36.796875 48.394531 Z M 27.203125 48.394531 C 26.816406 48.449219 26.480469 48.730469 26.375 49.128906 L 25.859375 51.0625 C 25.714844 51.59375 26.03125 52.140625 26.5625 52.285156 C 26.652344 52.308594 26.738281 52.316406 26.824219 52.316406 C 27.261719 52.316406 27.667969 52.023438 27.785156 51.578125 L 28.308594 49.644531 C 28.449219 49.113281 28.132813 48.5625 27.597656 48.421875 C 27.464844 48.386719 27.332031 48.378906 27.203125 48.394531 Z M 32 49 C 31.449219 49 31 49.445313 31 50 L 31 52 C 31 52.554688 31.449219 53 32 53 C 32.550781 53 33 52.554688 33 52 L 33 50 C 33 49.445313 32.550781 49 32 49 Z"></path></svg>
+        </div>
+        <h3>BACK-END</h3>
+        <p>Node JS - ExpressJS - PostgreSQL - MongoDB</p>
+        <div class="back-svg">
+          <img src="https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg" alt="nodejs" height="30">
+          <img height="30" src="https://www.vectorlogo.zone/logos/expressjs/expressjs-icon.svg" alt="express">
+          <img height="30" alt="Postgresql elephant" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/512px-Postgresql_elephant.svg.png">
+          <img src="https://www.vectorlogo.zone/logos/mongodb/mongodb-icon.svg" alt="mongo" height="30">
+        </div>
+      </div>
+    </section>
+    <section id="portfolio">
+      <h2 id="portfolio-header">
+        PORTAFOLIO
+      </h2>
+      <div class="project-card">
+        <a href="https://bloggerio-iiigygyiii.herokuapp.com/"><img class="project-preview" src="https://i.imgur.com/4j9iQOY.png" height="250" title="Blogger.IO" alt="bloggerio project"/></a>
+        <div class="project-info">
+          <h3 id="bloggerio" class="project-title">Blogger.IO</h3>
+          <hr class="dotted" style="width:15%"/>
+          <p class="project-description">En este proyecto se hizo uso de JWT para la autenticación del usuario, también de Redux para manejo del estado. Se hizo uso de las tecnologías siguientes:</p>
+          <div class="project-techs">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="react" height="30">
+            <img src="https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg" alt="nodejs" height="30">
+            <img height="30" src="https://www.vectorlogo.zone/logos/expressjs/expressjs-icon.svg" alt="express">
+            <img src="https://www.vectorlogo.zone/logos/mongodb/mongodb-icon.svg" alt="mongo" height="30">
+          </div>
+          <div class="project-links">
+            <a href="https://bloggerio-iiigygyiii.herokuapp.com/"><i class="fas fa-globe-americas"></i></a>
+            <a href="http://"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contactme">
+      <h2 id="contactme-header">CONTACTO</h2>
+      <hr class="dotted"/>
+      <p id="contactme-paragraph">Si mi perfil encaja con lo que buscas, no dudes en contactarme por cualquiera de los siguientes métodos:</p>
+      <div class="contact-btns">
+        <a class="fab-btn" href="https://www.linkedin.com/in/omar-cocoletzi-cabrera-773762214/" target="_blank" >LinkedIn  <i class="fab fa-linkedin"></i></a>
+        <a class="fab-btn" href="mailto:ococoletzic@gmail.com?subject=Personal%20Website%20Contact">Email  <i class="fas fa-envelope"></i></a>
+      </div>
+    </section>
+  </main>
+  <footer>
+  </footer>
+  <script src="./index.js"></script>
+</body>
+</html>
